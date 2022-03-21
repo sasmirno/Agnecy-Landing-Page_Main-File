@@ -324,7 +324,7 @@
 	display: grid;
 	justify-items: center;
 	grid-gap: 15px;
-	padding: 130px 30px 0px 30px;
+	padding: 130px 30px 100px 30px;
 	width: 100%;
 	max-width: 1310px;
 }
@@ -421,6 +421,55 @@
 	grid-template-columns: repeat(4, 200px);
 	margin: 0px 0px 0px 50px;
 }
+/*Третья часть сайта*/
+.background_3 {
+	display: grid;
+	justify-items: center;
+	background-color: #F5F0DD;
+	min-height: 500px;
+}
+.section_5 {
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	grid-gap: 40px;
+	padding: 0px 10px;
+}
+.section_5_title {
+	font-size: 42px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: 700;
+}
+.section_5_text {
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+.section_5_forma {
+	color: #2c2c2c;
+}
+.section_5_forma input {
+	font-size: 16px;
+	width: 520px;
+	height: 80px;
+	border-radius: 4px;
+	padding: 40px;
+	margin: 15px 18px 15px 0px;
+}
+.section_5_button {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #FF3F3F;
+	border: solid 2px #FF3F3F;
+	border-radius: 4px;
+	padding: 27px 52px;
+}
+.section_5_button:hover {
+	color: #FF3F3F;
+	background-color: #F5F0DD;
+}
 
 /*Адаптив*/
 @media (max-width: 1256px) {
@@ -487,7 +536,7 @@
 		width: 230px;
 	}
 	.section_4 {
-		padding: 100px 30px 0px 30px;
+		padding: 100px 30px 80px 30px;
 	}
 	.section_4_title {
 		font-size: 24px;
@@ -507,6 +556,9 @@
 	}
 	.section_4_block-4 {
 		margin: 0px 0px 0px 30px;
+	}
+	.section_5_title {
+		font-size: 30px;
 	}
 }
 @media (max-width: 830px) {
@@ -606,7 +658,7 @@
 		width: 210px;
 	}
 	.section_4 {
-		padding: 80px 30px 0px 30px;
+		padding: 80px 30px 60px 30px;
 	}
 	.section_4_block-1 {
 		margin: 0px 0px 30px 0px;
@@ -620,10 +672,14 @@
 	.section_4_block-4 {
 		margin: 0px 0px 0px 0px;
 	}
+	.section_5_forma input {
+		width: 450px;
+	}
 }
 @media (max-width: 480px) {
 	.section_1 {
 		padding: 5px 5px 0px 5px;
+		grid-gap: 0px;
 	}
 	.section_1_video {
 		width: 320px;
@@ -653,13 +709,17 @@
 		width: 290px;
 	}
 	.section_4 {
-		padding: 50px 5px 0px 5px;
+		padding: 50px 5px 40px 5px;
 		grid-gap: 5px;
 	}
 	.section_4_block-4 {
 		justify-self: start;
 		grid-gap: 5px;
 		grid-template-columns: repeat(2, 200px);
+	}
+	.section_5_forma input {
+		width: 300px;
+		margin: 15px 0px 15px 0px;
 	}
 }
 @media (max-width: 320px) {
@@ -700,6 +760,9 @@
 	.section_2_line {
 		grid-row: 8;
 		grid-column: 1;
+	}
+	.section_4_foto img {
+		max-width: 300px;
 	}
 	.section_4_block-4 {
 		grid-template-columns: repeat(1, 200px);
